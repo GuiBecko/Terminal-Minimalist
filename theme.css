@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 body {
 	--radius-s: 0px;
 	--radius-m: 0px;
@@ -13,6 +14,62 @@ body {
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
 	display: none;
 }
+.theme-dark{
+	--background-primary: hsl(0, 0%, 0%);
+	--background-secondary:hsl(0, 0%, 5%);
+}
+.theme-light{
+	--background-primary: hsl(0, 0%, 90%);
+	--background-secondary:hsl(0, 0%, 95%);
+}
+.inline-title:not([data-level]){
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.cm-line{
+	font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: -0.015em;
+}
+.cm-em{
+	font-family: "JetBrains Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: -0.015em;
+}
+.view-header-title{
+	font-family: "JetBrains Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: -0.015em;
+}
+.workspace-drawer-vault-name{
+	font-family: "JetBrains Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: -0.015em;
+}
+.nav-files-container{
+	background-color: var(--background-primary);
+}
+.workspace-ribbon{
+	background-color: var(--background-primary);
+}
+.nav-header{
+	background-color: var(--background-primary);
+}
+.workspace-sidedock-vault-profile{
+	background-color: var(--background-primary);
+}
+
+
 
 svg * {
 	stroke-linecap: square;
