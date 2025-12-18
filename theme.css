@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
 body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
+	
+	--radius-s: 5px;
+	--radius-m: 5px;
+	--radius-l: 5px;
+	--input-radius: 5px;
 	--tab-radius-active: 0px;
 	--checkbox-radius: 0px;
 	--toggle-radius: 0px;
@@ -16,6 +18,13 @@ body {
 	display: none;
 }
 .theme-dark{
+	--h1-color: hsl(245, 20%, 91%);
+	--h2-color: hsl(245, 20%, 88%);
+	--h3-color: hsl(245, 20%, 81%);
+	--h4-color: hsl(245, 20%, 75%);
+	--h5-color: hsl(245, 20%, 68%);
+	--h6-color: hsl(245, 20%, 60%);
+
 	--background-primary: #191724;
 	--background-secondary:#232136;
 	--color-accent:#d7827e;
@@ -25,7 +34,8 @@ body {
 	--color-red-rgb:rgb(235, 111, 146);
 	--color-red:#eb6f92;
 	--color-orange-rgb:rgb(215, 130, 126);
-	--color-orange:#d7827e;
+	--color-orange:hsl(3, 53%, 67%);
+	--color-orange-secondary:hsl(3, 53%, 60%);
 	--color-yellow-rgb:rgb(246, 193, 119);
 	--color-yellow:#f6c177;
 	--color-cyan-rgb:rgb(156, 207, 216);
@@ -87,9 +97,33 @@ body {
 .cm-header{
 	font-family: "JetBrains Mono", monospace;
 	font-optical-sizing: auto;
-	font-weight: 400;
+	font-weight: 600;
 	font-style: normal;
 	letter-spacing: -0.015em;
+}
+.cm-highlight{
+	padding: 2px;
+}
+.cm-header-1{
+	color: var(--h1-color);
+}
+.cm-header-2{
+	color: var(--h2-color);
+}
+.cm-header-3{
+	color: var(--h23-color);
+	
+}
+.cm-header-4{
+	color: var(--h4-color);
+}
+.cm-header-5{
+	color: var(--h5-color);
+	
+}
+.cm-header-6{
+	color: var(--h6-color);
+
 }
 .cm-striketrough{
 	font-family: "JetBrains Mono", monospace;
@@ -145,6 +179,9 @@ li{
   	font-optical-sizing: auto;
  	font-weight: 500;
   	font-style: normal;
+}
+button.mod-cta:hover{
+	background-color: var(--color-orange-secondary);
 }
 
 
